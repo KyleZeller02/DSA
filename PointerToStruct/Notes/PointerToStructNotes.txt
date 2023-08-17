@@ -1,0 +1,35 @@
+Pointer to Structure
+
+
+Struct Rectangle{
+	int length;
+	int width;
+};
+
+int main(){
+	struct Rectangle r = {10,5};
+	
+	//change length? r.length = 15;
+	
+	//declare with pointer
+	
+	struct Rectangle *p = &r;
+	
+	//access members
+	(*p).length = 20;
+	//or
+	p->length = 20;
+	
+	struct Rectangle *p; //created in the stack
+	
+	p = (struct Rectangle*)malloc(sizeof(struct Rectangle)); // allocte rectangel to heap, assign it to p
+	
+	//assign property variables
+	p->length = 10;
+	p->width = 5;
+	
+	
+	
+	
+
+}
