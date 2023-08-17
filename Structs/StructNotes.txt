@@ -1,0 +1,89 @@
+Structure: Rectangle
+A rectangle has properties for length and width.
+
+
+// Definition of structure
+struct Rectangle {
+	int length; // 2 bytes
+	int width;  // 2 bytes
+}; // total: 4 bytes
+
+// Declaration of variable
+int main() {
+	struct Rectangle r; // Declaration in stack
+	return 0;
+}
+
+// Initialization
+int main() {
+	struct Rectangle r = {10, 5}; // Declaration and initialization in stack
+	return 0;
+}
+
+// r is initialized in the stack
+// Accessing members of the structure:
+r.length = 15; // Changes the length property to 15
+r.width = 10;  // Changes width property to 10
+
+printf("Area of Rectangle is: %d", r.length * r.width);
+Examples
+Complex Numbers
+
+A complex number has real and imaginary parts.
+
+
+struct Complex {
+	int real;       // 2 bytes, allocated in stack when object is declared
+	int imaginary;  // 2 bytes, allocated in stack when object is declared
+}; // Complex has 4 bytes
+Student Information
+
+Student information includes the year, name, major, and address.
+
+
+#include <string.h> // Needed for strcpy
+
+struct Student {
+	int year;        // 2 bytes, stack
+	char name[25];   // 25 bytes, stack
+	char major[10];  // 10 bytes, stack
+	char address[50];// 50 bytes, stack
+}; // Student has 77 bytes
+
+struct Student s; // Allocated in stack
+s.year = 10;
+strcpy(s.name, "John");
+Cards
+
+Cards have properties for face, suit, and color.
+
+
+struct Card {
+	int face; // 2 bytes, the number, stack
+	int suit; // 2 bytes, stack
+	int color;// 2 bytes, black -> 0, red -> 1, stack
+}; // 6 total bytes
+
+int main() {
+	// Using dot operator to assign values
+	struct Card c; // Allocated in stack
+	c.face = 1;
+	c.suit = 0;
+	c.color = 0;
+	
+	// Initializing
+	struct Card c = {1, 0, 0}; // Allocated in stack
+
+	return 0;
+}
+
+// We want a deck of cards
+int main() {
+	struct Card deck[52] = { {1, 0, 0}, {0, 0, 0}, {1, 1, 1}, /* ... */ }; // 312 bytes, array of structs, stack
+	
+	printf("%d", deck[0].face);
+	printf("%d", deck[0].suit);
+	printf("%d", deck[0].color);
+
+	return 0;
+}
