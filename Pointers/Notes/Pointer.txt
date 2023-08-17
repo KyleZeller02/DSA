@@ -1,0 +1,42 @@
+Pointers are used to access data indirectly.
+
+main program can directly access main memory and stack
+main program can not directly access the heap.
+In order to access memory on the heap, we need a pointer.
+Pointers are used to access resources outside of the program, accessing heap memory, and parameter passing.
+
+Example:
+
+int a = 10; //data variable
+
+int *p; // address variable
+p = &a; // created in the stack frame of the main function.
+
+lets say a is stored at location 200-201.
+p is stored at some other location, 210-211.
+the value of p, which is located at 210-211 is the memory location of a, which is 200-201.
+p points at the memory location of a.
+
+printf("%d",a); //prints 10
+printf("%d",*p); //prints 10, this is data printing
+
+
+//in order to use malloc, import std.h
+
+#include<stdlib.h>
+int main(){
+	//This uses c
+	int *p;
+	p = (int *) malloc(5* sizeof(int)); //if int is 2 bytes, we are allocated 5*2, or 10, bytes of memory, this is allocated on the heap
+	
+	//allocating to the heap using c++
+	p = new int[5];
+	
+	
+
+	
+	
+	return 0;
+}
+
+
