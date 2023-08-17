@@ -1,0 +1,15 @@
+Arrays
+
+declaration:
+	int a[5]; //this is intialize a variable called a to an array with 5 spaces
+	a[0] = 27; // sets first index to 27
+	
+creating:
+	delcaration: int a[5]; //is stored in main
+	initaizlation: int b[5] = {2,4,6,8,10}; 
+	
+	//printing elements of array
+for(int i = 0; i < 5; i++){
+	printf("%d", b[i]);
+}
+
