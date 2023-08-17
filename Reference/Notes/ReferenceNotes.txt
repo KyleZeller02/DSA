@@ -1,0 +1,26 @@
+Reference:
+
+
+int main(){
+
+	int a = 10;
+	
+	// we want a reference to a
+	int &r = a;
+	
+	//what this does:
+	
+	//if you want to reference the value 10, you call either use r or a. they both have the value 10.
+	//2 names for a varirable
+	
+	cout<<a; // 10
+	r++;
+	cout<<a; // 11
+	cout<r; //11
+	
+	//this is useful in parameter passing
+	//r is considered an alias
+	
+
+	return 0;
+}
