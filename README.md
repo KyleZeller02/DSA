@@ -1,22 +1,16 @@
 # Data Structures and Algorithms Practice
 
-This repository contains my practice work on data structures and algorithms. I have completed a comprehensive online course that focused on implementing various algorithms and data structures in the C programming language. To further hone my skills, I have translated these same problems into Swift, demonstrating my ability to adapt and learn across different programming paradigms.
+This repository contains my practice work on data structures and algorithms. I am working to complete an online course focused on implementing various algorithms and data structures in both C and C++. To further solidify my understanding, I have translated these same problems into Swift, demonstrating adaptability and proficiency in multiple programming languages.
 
 ## Contents
 
-- **C Implementations**: A thorough exploration of various data structures and algorithms using C. It includes detailed explanations, efficient code, and consideration of edge cases.
-- **Swift Implementations**: Translations of the same problems into Swift, showcasing not only my understanding of the algorithms but also my ability to work in different programming languages.
+- **C & C++ Implementations**: A detailed exploration of various data structures and algorithms using C and C++. The implementations include thorough explanations, efficient code, and consideration of edge cases.
+- **Swift Implementations**: Once finished the the C/C++ implementations, translations of the same problems into Swift will be made, showcasing my ability to work across different programming paradigms and my commitment to continuous learning.
 
 ## Highlights
 
-- **Efficiency**: Careful consideration of time and space complexity in both C and Swift implementations.
-- **Problem Solving**: Tackling a wide range of problems from basic to advanced levels.
-- **Code Quality**: Well-structured code, following best practices, with extensive comments explaining logic and decisions.
-- **Adaptation Across Languages**: Demonstrating flexibility in coding by solving the same problems in both C and Swift.
+- **Multi-Language Proficiency**: Implementations in C, C++, and Swift, reflecting a versatile skill set.
+- **Efficiency**: Emphasis on optimal time and space complexity across all implementations.
+- **Problem Solving**: A wide spectrum of problems solved, from foundational to advanced concepts.
+- **Code Quality**: Clean, well-structured code, following industry best practices, with comprehensive comments.
 
-## Getting Started
-
-You can clone this repository to your local machine to explore the code. The C and Swift code are organized into separate directories for clarity.
-
-```bash
-git clone https://github.com/YourUsername/DSA.git
